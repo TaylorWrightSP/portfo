@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main_route():
-    return render_template(index.html)
+    return render_template('index.html')
 
 @app.route('/<string:page_name>')
 def dynamic_route(page_name):
